@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-import sys
+if __name__ == "__main__":
+    from sys import argv
+    ac = len(argv) - 1
 
-if __name__ == '__main__':
-    av = sys.argv
-    l_av = len(av)
     sum = 0
+    for i in range(1, ac + 1):
+        sum += int(argv[i])
 
-    if l_av > 1:
-        for i in range(1, l_av):
-            sum += int(av[i])
-
-    print(sum)
+    print("{:d}".format(sum))
