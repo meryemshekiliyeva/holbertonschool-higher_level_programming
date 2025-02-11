@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
-p = print
-r = range
-
-[p("{}".format(f"{i:02}"), end=", " if i < 99 else "\n") for i in r(0, 100)]
+for i in range(0, 100):
+    if i == 99:
+        print("{}".format(i))
+    else:
+        print("{:02d}".format(i), end=", ")
